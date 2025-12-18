@@ -4,9 +4,9 @@ import numpy as np
 with open("./day_08/input.txt") as file:
     junction_boxes = file.read().splitlines()
 
-# junction_boxes = [np.asarray(junction_box.split(","), dtype=int) for junction_box in junction_boxes]
+junction_boxes = [np.asarray(junction_box.split(","), dtype=int) for junction_box in junction_boxes]
 
-print(*junction_boxes, sep="\n")
+# print(*junction_boxes, sep="\n")
 
 distances = []
 for i, j in combinations(range(len(junction_boxes)), 2):
